@@ -411,8 +411,7 @@ qm set $VMID \
   -scsi0 ${DISK1_REF},${DISK_CACHE}${THIN}size=2G \
   -boot order=scsi0 \
   -description "# Debian 11 VM
-### https://github.com/Wolf2000Pi Proxmox
->/dev/null
+### https://github.com/Wolf2000Pi Proxmox " >/dev/null
 msg_ok "Created a Debian 11 VM ${CL}${BL}(${HN})"
 if [ "$START_VM" == "yes" ]; then
   msg_info "Starting Debian 11 VM"
